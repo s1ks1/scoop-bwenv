@@ -1,1 +1,14 @@
-{"version": "2.0.0", "description": "Sync secrets from password managers (Bitwarden, 1Password) into your shell via direnv", "homepage": "https://github.com/s1ks1/bwenv", "license": "MIT", "url": "https://github.com/siks1/bwenv/releases/download/v2.0.0/bwenv-2.0.0-windows-amd64.zip", "hash": "22de6c7679c40a9b9d7b5713e4512c53498ca047d214948f54c20d36c77b7bd3b", "extract_dir": "bwenv-2.0.0-windows-amd64", "bin": "bwenv.exe", "checkver": "github", "autupdate": { "url": "https://github.com/s1ks1/bwenv/releases/download/v$1/bwenv-$1-windows-amd64.zip"}}
+{
+  "version": "2.0.0",
+  "description": "Sync secrets from password managers (Bitwarden, 1Password) into your shell via direnv",
+  "homepage": "https://github.com/s1ks1/bwenv",
+  "license": "MIT",
+  "url": "https://github.com/s1ks1/bwenv/releases/download/v2.0.0/bwenv-2.0.0-windows-amd64.zip",
+  "hash": "22de6c7679c40a9b9d7b5713e4512c53498ca047d214948f54c20d36c7b7bd3b",
+  "extract_dir": "bwenv-2.0.0-windows-amd64",
+  "bin": "bwenv.exe",
+  "checkver": "github",
+  "autoupdate": {
+    "url": "https://github.com/s1ks1/bwenv/releases/download/v$1/bwenv-$1-windows-amd64.zip"
+  }
+}
