@@ -1,14 +1,26 @@
 {
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Sync secrets from password managers (Bitwarden, 1Password) into your shell via direnv",
   "homepage": "https://github.com/s1ks1/bwenv",
   "license": "MIT",
-  "url": "https://github.com/s1ks1/bwenv/releases/download/v2.0.0/bwenv-2.0.0-windows-amd64.zip",
-  "hash": "22de6c7679c40a9b9d7b5713e4512c53498ca047d214948f54c20d36c7b7bd3b",
-  "extract_dir": "bwenv-2.0.0-windows-amd64",
-  "bin": "bwenv.exe",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/s1ks1/bwenv/releases/download/v2.0.1/bwenv-2.0.1-windows-amd64.zip",
+      "hash": "8ac9323f573f7940531af9e0426be5066a92c0a53cf3cf93432d7367e9822512",
+      "bin": "bwenv.exe"
+    }
+  },
   "checkver": "github",
   "autoupdate": {
-    "url": "https://github.com/s1ks1/bwenv/releases/download/v$1/bwenv-$1-windows-amd64.zip"
-  }
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/s1ks1/bwenv/releases/download/v$version/bwenv-$version-windows-amd64.zip",
+        "hash": {
+          "url": "https://github.com/s1ks1/bwenv/releases/download/v$version/checksums.txt",
+          "regex": "([a-fA-F0-9]{64})\\s+bwenv-$version-windows-amd64\\.zip"
+        }
+      }
+    }
+  },
+  "post_install": "Write-Host 'Run ''bwenv status'' to verify your setup.' -ForegroundColor Green"
 }
