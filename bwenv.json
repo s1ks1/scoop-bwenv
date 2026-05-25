@@ -1,12 +1,12 @@
 {
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Sync secrets from password managers (Bitwarden, 1Password) into your shell via direnv",
   "homepage": "https://github.com/s1ks1/bwenv",
   "license": "MIT",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/s1ks1/bwenv/releases/download/v2.0.1/bwenv-2.0.1-windows-amd64.zip",
-      "hash": "8ac9323f573f7940531af9e0426be5066a92c0a53cf3cf93432d7367e9822512",
+      "url": "https://github.com/s1ks1/bwenv/releases/download/v2.0.2/bwenv-2.0.2-windows-amd64.zip",
+      "hash": "0b9cf29d063f30dcd460313e3e42dacb2d511c648143268aa138da82887e1fa8",
       "bin": "bwenv.exe"
     }
   },
