@@ -1,26 +1,18 @@
 {
-  "version": "2.0.2",
-  "description": "Sync secrets from password managers (Bitwarden, 1Password) into your shell via direnv",
-  "homepage": "https://github.com/s1ks1/bwenv",
-  "license": "MIT",
-  "architecture": {
-    "64bit": {
-      "url": "https://github.com/s1ks1/bwenv/releases/download/v2.0.2/bwenv-2.0.2-windows-amd64.zip",
-      "hash": "0b9cf29d063f30dcd460313e3e42dacb2d511c648143268aa138da82887e1fa8",
-      "bin": "bwenv.exe"
-    }
-  },
-  "checkver": "github",
-  "autoupdate": {
+    "version": "2.0.4",
     "architecture": {
-      "64bit": {
-        "url": "https://github.com/s1ks1/bwenv/releases/download/v$version/bwenv-$version-windows-amd64.zip",
-        "hash": {
-          "url": "https://github.com/s1ks1/bwenv/releases/download/v$version/checksums.txt",
-          "regex": "([a-fA-F0-9]{64})\\s+bwenv-$version-windows-amd64\\.zip"
+        "64bit": {
+            "url": "https://github.com/s1ks1/bwenv/releases/download/v2.0.4/bwenv-2.0.4-windows-amd64.zip",
+            "bin": [
+                "bwenv.exe"
+            ],
+            "hash": "d4979d3ac6f45c49fadbe53ae7048b957a368117904d9ea75fd074e49aa22f23"
         }
-      }
-    }
-  },
-  "post_install": "Write-Host 'Run ''bwenv status'' to verify your setup.' -ForegroundColor Green"
+    },
+    "homepage": "https://github.com/s1ks1/bwenv",
+    "license": "MIT",
+    "description": "Sync secrets from password managers (Bitwarden, 1Password) into your shell via direnv",
+    "post_install": [
+        "Write-Host 'Run ''bwenv status'' to verify your setup.' -ForegroundColor Green"
+    ]
 }
