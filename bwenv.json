@@ -1,12 +1,12 @@
 {
-    "version": "2.0.5",
+    "version": "2.0.6",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/s1ks1/bwenv/releases/download/v2.0.5/bwenv-2.0.5-windows-amd64.zip",
+            "url": "https://github.com/s1ks1/bwenv/releases/download/v2.0.6/bwenv-2.0.6-windows-amd64.zip",
             "bin": [
                 "bwenv.exe"
             ],
-            "hash": "1887c5e99d6341e9045ad76e6594fa4868673f3ce9194e705c15dcd0c9c13878"
+            "hash": "b47662359d0bdc630cb3af50ce8547593d3d4911c9b68d26530a287ea3e9f5a0"
         }
     },
     "homepage": "https://github.com/s1ks1/bwenv",
