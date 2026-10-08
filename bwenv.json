@@ -1,17 +1,17 @@
 {
-    "version": "2.4.1",
+    "version": "3.0.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/s1ks1/bwenv/releases/download/v2.4.1/bwenv-2.4.1-windows-amd64.zip",
+            "url": "https://github.com/s1ks1/bwenv/releases/download/v3.0.0/bwenv-3.0.0-windows-amd64.zip",
             "bin": [
                 "bwenv.exe"
             ],
-            "hash": "0be143d357410702f6484532bd67041114ec785bb5eb63b9993a8ef49aca2bc7"
+            "hash": "9ee447f59dbdef200619a59805b693711ccf820e4de35e07f5bebad126e741de"
         }
     },
     "homepage": "https://github.com/s1ks1/bwenv",
     "license": "MIT",
-    "description": "Sync secrets from password managers (Bitwarden, 1Password) into your shell via direnv",
+    "description": "Sync secrets from Bitwarden or 1Password into your shell",
     "post_install": [
         "Write-Host 'Run ''bwenv status'' to verify your setup.' -ForegroundColor Green"
     ]
